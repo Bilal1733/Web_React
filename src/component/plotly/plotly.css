@@ -1,0 +1,8 @@
+#plotly-plotlycomponent .js-plotly-plot, #plotly-plotlycomponent .user-select-none.svg-container, #plotly-plotlycomponent  .main-svg{
+    width: 100% !important;
+    margin: auto;
+}
+#plotly-plotlycomponent{
+    width:100% !important;
+    margin: auto
+}
