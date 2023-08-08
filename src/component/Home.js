@@ -8,7 +8,7 @@ const Home = () => {
     <div>
 
       This is home component
-    <VisCompoent/>
+    {/* <VisCompoent/> */}
       {/* <PlotlyIndex/> */}
     </div>
   )
