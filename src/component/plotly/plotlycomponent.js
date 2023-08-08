@@ -8,7 +8,7 @@ import { defaultMethod } from 'react-router-dom/dist/dom';
 
 const PlotlyComponent = (props) => {
     var responseData = plotlyCharts(props.divName, props.responseData, props.showLegend, props.currencySign, props.dataForAddLog);
-    console.log('responseDataresponseDataresponseDataresponseDataresponseDataresponseData',responseData)
+    //console.log('responseDataresponseDataresponseDataresponseDataresponseDataresponseData',responseData)
     return (
         <div id='plotly-plotlycomponent'>
             <Plot
