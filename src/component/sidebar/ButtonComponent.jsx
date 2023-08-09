@@ -1,13 +1,12 @@
-import React from 'react'
-
-const ButtonComponent = (props) => {
+import './btncomponent.css'
+const ButtonComponent = ({onClickAction,name,className}) => {
 const handleClick = () => {
-    props.onClickAction()
+    onClickAction()
 }
    
   return (
-        <button type="button" className="btn btn-dark btn-sm" onClick={handleClick}>
-            {props.name}
+        <button type="button" className={className} onClick={handleClick} >
+            {name}
         </button>  )
 }
 
