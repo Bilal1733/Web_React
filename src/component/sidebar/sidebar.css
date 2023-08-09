@@ -1,7 +1,7 @@
 .bg-color {
     background-color: #f5f5f5;
     padding: 10px;
-
+    height:90vh;
 }
 
 .quickAccessTitle {
@@ -11,6 +11,11 @@
 
 .nav-link{
     outline: none !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
 }
 
 ul li{
@@ -23,6 +28,12 @@ ul li a {
     color: black;
 }
 
+a:hover{
+    text-decoration: underline;
+    color: #007592;
+}
+
+
 ul li span {
 font-size: 12px;
 color: gray;
@@ -31,3 +42,20 @@ color: gray;
 .border-right{
     border-right:1px solid gray;
 }
+
+.hide{
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    .hide-list{
+        display: none;   
+    }
+
+    .show-list{
+        display: block;
+    
+    }
+  }

@@ -3,36 +3,37 @@ import "./sidebar.css";
 import ButtonComponent from "./ButtonComponent";
 import { data } from "./data";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [links, setLinks] = useState([]);
   const [reportFlag, setReportFlag] = useState("Reports");
-  console.log("reportFlag", reportFlag);
+  const [disable,setDisable] = useState();
   useEffect(() => {
-    reportFlag == " Reports"
-      ? setLinks(data.quicklink_report)
-      : setLinks(data.quicklink_keys);
+    reportFlag == "Reports" ? setLinks(data.quicklink_report) : setLinks(data.quicklink_keys)
   }, [reportFlag]);
 
   console.log(links);
 
   return (
-    <div className="container-fluid bg-color">
-      <div className="row">
-        <div className="col-10">
+    <div className={props.show === true ? "container-fluid bg-color show-list" : "container-fluid bg-color hide-list" } id='sidebar'>
+      <div className="d-flex justify-content-between">
+        <div className="float-start">
           <p className="quickAccessTitle">
             <b>Quick Links</b>
           </p>
         </div>
-        <div className="col-1">
+        <div className="float-end">
           <ButtonComponent
             name="Reports"
+            reportFlag={reportFlag}
             onClickAction={() => setReportFlag("Reports")}
+            className={reportFlag === "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-light btn-sm m-2 button"}
           />
-        </div>
-        <div className="col-1">
           <ButtonComponent
             name="Key Links"
+            reportFlag={reportFlag}
             onClickAction={() => setReportFlag("Key Links")}
+            disable_btn={reportFlag === "Reports" && true}
+            className={reportFlag !== "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-light btn-sm m-2 button"}
           />
         </div>
       </div>
@@ -42,8 +43,8 @@ const Sidebar = () => {
             {links &&
               links.map((link) => {
                 return (
-                  <li key={link.id} className="mb-2">
-                    <a href="">{link.link_name}</a>
+                  <li key={link.id} className={reportFlag == "Reports" ? "mb-3" : "mb-3 d-flex justify-content-between"}>
+                    <a href="https://www.google.com/">{link.link_name}</a>
                     {reportFlag === "Reports" ? (
                       <div>
                         <span className="border-right pe-1">ID:{link.id}</span>

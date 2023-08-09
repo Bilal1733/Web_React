@@ -5,4 +5,19 @@
     p{
         color:red
     }
+    .hide{
+        display: none;
+    }
+
+    //mobile
+
+@media only screen and (max-width: 600px) {
+    .hide{
+        display: block;
+    }
+  }
 }
+
+
+
+
