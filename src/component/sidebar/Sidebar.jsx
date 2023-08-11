@@ -6,15 +6,14 @@ import { data } from "./data";
 const Sidebar = (props) => {
   const [links, setLinks] = useState([]);
   const [reportFlag, setReportFlag] = useState("Reports");
-  const [disable,setDisable] = useState();
   useEffect(() => {
-    reportFlag == "Reports" ? setLinks(data.quicklink_report) : setLinks(data.quicklink_keys)
+    reportFlag === "Reports" ? setLinks(data.quicklink_report) : setLinks(data.quicklink_keys)
   }, [reportFlag]);
 
   console.log(links);
 
   return (
-    <div className={props.show === true ? "container-fluid bg-color show-list" : "container-fluid bg-color hide-list" } id='sidebar'>
+    <div className={props.show === true ? "container-fluid bg-color show-list transition" : "container-fluid bg-color hide-list transition" } id='sidebar'>
       <div className="d-flex justify-content-between">
         <div className="float-start">
           <p className="quickAccessTitle">
@@ -26,14 +25,14 @@ const Sidebar = (props) => {
             name="Reports"
             reportFlag={reportFlag}
             onClickAction={() => setReportFlag("Reports")}
-            className={reportFlag === "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-light btn-sm m-2 button"}
+            className={reportFlag === "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-secondary btn-sm m-2 button"}
           />
           <ButtonComponent
             name="Key Links"
             reportFlag={reportFlag}
             onClickAction={() => setReportFlag("Key Links")}
             disable_btn={reportFlag === "Reports" && true}
-            className={reportFlag !== "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-light btn-sm m-2 button"}
+            className={reportFlag !== "Reports" ? "btn btn-dark btn-sm m-2 button":"btn btn-secondary btn-sm m-2 button"}
           />
         </div>
       </div>
@@ -43,7 +42,7 @@ const Sidebar = (props) => {
             {links &&
               links.map((link) => {
                 return (
-                  <li key={link.id} className={reportFlag == "Reports" ? "mb-3" : "mb-3 d-flex justify-content-between"}>
+                  <li key={link.id} className={reportFlag === "Reports" ? "mb-3" : "mb-3 d-flex justify-content-between"}>
                     <a href="https://www.google.com/">{link.link_name}</a>
                     {reportFlag === "Reports" ? (
                       <div>
