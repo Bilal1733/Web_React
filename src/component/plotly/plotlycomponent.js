@@ -5,6 +5,7 @@ import './plotly.css';
 import Plot from 'react-plotly.js';
 import { plotlyCharts } from './plotlyCharts';
 
+
 const PlotlyComponent = (props) => {
     var responseData = plotlyCharts(props.divName, props.responseData, props.showLegend, props.currencySign, props.dataForAddLog);
     //console.log('responseDataresponseDataresponseDataresponseDataresponseDataresponseData',responseData)

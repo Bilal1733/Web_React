@@ -45,7 +45,7 @@ export default function VisCompoent() {
         <Timeline
             options={responseData.options}
             items={responseData.items}
-            groups={responseData.groups}
+            // groups={responseData.groups}
         />
         </div>
     
