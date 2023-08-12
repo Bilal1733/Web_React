@@ -1,37 +1,23 @@
 
-import React from 'react'
-// import PlotlyComponent from './plotly/plotlycomponent'
-// import PlotlyIndex from './plotly/plotlyIndex'
-// import VisCompoent from './vis/VisCompoent'
+import React, { useState } from 'react'
 import Header from '../components/Header'
 import Tabs from './tabs/Tabs'
 import Sidebar from './sidebar/Sidebar'
 
 const Home = () => {
+  const [show,setShow] = useState(false);
   return (
-    <div>
-      <Header />
-      <div className=''>
-          {/* <div className='row'>
-            <div className='col-sm-12 col-md-4'>side bar</div>
-            <div className='col-sm-12 col-md-8'>this is content</div>
-          </div> */}
-       
-      </div>
-      <div className=''>
+    <>
+      <Header setShow={setShow} show={show}/>
           <div className='row'>
-            <div className='col-sm-12 col-md-8'>  
+            <div className='col-sm-12 col-md-9'>  
               <Tabs/>
             </div>
-            <div className='col-sm-12 col-md-4'>
-            <Sidebar />
+            <div className='col-sm-12 col-md-3'>
+              <Sidebar show={show} />
             </div>
-          </div>
-      </div>
-    {/* <VisCompoent/> */}
-      {/* <PlotlyIndex/> */}
-      
-    </div>
+          </div> 
+    </>
   )
 }
 

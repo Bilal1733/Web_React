@@ -1,0 +1,18 @@
+.button{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: gray;
+    color: white;
+  }
+
+  .button:active {
+    background-color: #000000;
+    color: white;
+  }
+  .button:visited {
+    background-color: #000000;
+    color: white;
+  }

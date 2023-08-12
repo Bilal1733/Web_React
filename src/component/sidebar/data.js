@@ -1,80 +1,93 @@
  export const data = {
     "quicklink_report" :[
         {
-          "id": 1,
-          "link_name": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-          "report_type": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+          "id": 6274,
+          "link_name": "Report Name- 01-Aug-2023 17:43:51 IST",
+          "report_type": "Budget Comparison Report"
         },
         {
-          "id": 2,
-          "link_name": "qui est esse",
-          "report_type": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+          "id": 6322,
+          "link_name": "Invalid_DNT",
+          "report_type": "Campaign Performance Report"
         },
         {
-          "id": 3,
-          "link_name": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-          "report_type": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+          "id": 6320,
+          "link_name": "Invalid_Date_125",
+          "report_type": "Campaign Performance Report"
         },
         {
-          "id": 4,
-          "link_name": "eum et est occaecati",
-          "report_type": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+          "id": 6289,
+          "link_name": "Report Name- 02-Aug-2023 12:31:22 IST",
+          "report_type": "Plan Comparison Report"
         },
         {
-          "id": 5,
-          "link_name": "nesciunt quas odio",
-          "report_type": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+          "id": 6275,
+          "link_name": "Report Name- 01-Aug-2023 19:7:27 IST",
+          "report_type": "Plan Comparison Report"
         },
         {
-          "id": 6,
-          "link_name": "dolorem eum magni eos aperiam quia",
-          "report_type": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+          "id": 6267,
+          "link_name": "HC_Sunday_Report",
+          "report_type": "Campaign Performance Report"
         },
         {
-          "id": 7,
-          "link_name": "magnam facilis autem",
-          "report_type": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+          "id": 6264,
+          "link_name": "Sunday_TacticPerformance_Report_HC",
+          "report_type": "Tactic Performance Report"
         },
         {
-          "id": 8,
-          "link_name": "dolorem dolore est ipsam",
-          "report_type": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+          "id": 6263,
+          "link_name": "Ignore_report",
+          "report_type": "Plan Overview Report"
         },
+        {
+            "id": 6262,
+            "link_name": "Sunday_report_HC",
+            "report_type": "Plan Overview Report"
+          },
         ],
     "quicklink_keys" :
         [
             {
               "id": 1,
-              "link_name": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+              "link_name": "Marketing on Facebook",
             },
             {
               "id": 2,
-              "link_name": "qui est esse",
+              "link_name": "Twitter's CPMs Dive, Facebook's Soar",
             },
             {
               "id": 3,
-              "link_name": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+              "link_name": "The Video Advertising Bureau",
             },
             {
               "id": 4,
-              "link_name": "eum et est occaecati",
+              "link_name": "Amazon Sponsored Ads Basics",
             },
             {
               "id": 5,
-              "link_name": "nesciunt quas odio",
+              "link_name": "Google Ads announces new click-to-message ad features and store visits updates",
             },
             {
               "id": 6,
-              "link_name": "dolorem eum magni eos aperiam quia",
+              "link_name": "Snap Continues to Struggle to Gain Users",
             },
             {
               "id": 7,
-              "link_name": "magnam facilis autem",
+              "link_name": "The Trade Desk unveils new audience ID solution",
             },
             {
               "id": 8,
-              "link_name": "dolorem dolore est ipsam",
+              "link_name": "Deep Dive on the Snap Pixel",
             },
+            {
+                "id": 9,
+                "link_name": "eCommerce Advertising on Snapchat",
+              },
+              {
+                "id": 10,
+                "link_name": "Pinterest’s new Promoted Carousel ads will display up to 5 swipable images in a single ad"
+              },
             
     ]
 }
