@@ -16,12 +16,12 @@ const Sidebar = (props) => {
     <div className="sidebarDiv">
     <div className={props.show === true ? "container-fluid bg-color show-list transition" : "container-fluid bg-color hide-list transition" } id='sidebar'>
       <div className="d-flex justify-content-between pt-4">
-        <div className="float-start">
+        <div className="float-start align-self-end">
           <p className="quickAccessTitle">
             <b>Quick Links</b>
           </p>
         </div>
-        <div className="float-end">
+        <div className="float-end align-self-end">
           <ButtonComponent
             name="Reports"
             reportFlag={reportFlag}
