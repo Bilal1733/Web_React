@@ -10,7 +10,6 @@ const Sidebar = (props) => {
     reportFlag === "Reports" ? setLinks(data.quicklink_report) : setLinks(data.quicklink_keys)
   }, [reportFlag]);
 
-  console.log(links);
 
   return (
     <div className="sidebarDiv">
