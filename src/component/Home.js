@@ -7,7 +7,7 @@ import Sidebar from './sidebar/Sidebar'
 const Home = () => {
   const [show,setShow] = useState(false);
   return (
-    <>
+    <div className='container-fluid'>
       <Header setShow={setShow} show={show}/>
           <div className='row'>
             <div className='col-sm-12 col-md-9'>  
@@ -17,7 +17,7 @@ const Home = () => {
               <Sidebar show={show} />
             </div>
           </div> 
-    </>
+    </div>
   )
 }
 
