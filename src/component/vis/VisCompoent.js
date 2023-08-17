@@ -37,14 +37,14 @@ export default function VisCompoent() {
         }
     };
     var currencySign = "$";
-    var responseData = Viscommon(response1, mainConfig, 'visualizationFlowchart',)
-    console.log(responseData, 'responseData',)
+    var responseData = Viscommon(response1, mainConfig, 'visualizationFlowchart',) 
     return (
         <>
 
             <Timeline
                 options={responseData.options}
                 items={responseData.items}
+                
             // groups={responseData.groups}
             />
 
