@@ -64,4 +64,13 @@ color: gray;
         display: block;
     
     }
+    ul li a {
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+    }
+    ul li span {
+        font-size: 11px;
+        color: gray;
+    }
   }
