@@ -462,10 +462,14 @@ export const Viscommon = (data, config, element, notid = false, elementParent = 
     // Configuration for the Timeline
     objectParameters.options = {
         showCurrentTime: true,
+        selectable: true,
         stack: true,
         orientation: 'top',
-        moveable: false,
-        zoomable: false,
+        type: "range",
+        moveable: true,
+        zoomable: true,
+        zoomKey: "ctrlKey",
+        width: "100%",
         margin: {
             item: {
                 horizontal: -1

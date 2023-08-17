@@ -8,7 +8,8 @@ export default function Tabs() {
     const [selectedTab , setSelectedTab] = useState(response?.tabsName[0]?.name)
     // Timeline data
     const timelineJsondata = ["View All" ,"budget" ,"Campaign"]
-    console.log(selectedTab)
+    const timelineJsondata2 = ["View All" ,"Strategy & Research" ,"Measurement","Planning","Optimization","Data Management","Configuration"]
+
     return (
         <div>
             <ul className="nav nav-tabs">
@@ -27,7 +28,7 @@ export default function Tabs() {
             }
             {selectedTab === "Capabilities" &&
             <div> 
-                This is capabilities tab
+                <TabCompoent timelineJsondata={timelineJsondata2} />
             </div>
             }
         </div>
