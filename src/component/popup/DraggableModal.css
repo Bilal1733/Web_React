@@ -1,0 +1,53 @@
+.draggable-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 800px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: grab;
+  padding: 8px;
+  background-color: #000000;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-header h3 {
+  font-size: 18px; /* Set the font size to 18px */
+  color: white;
+  font-weight: 400;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 16px;
+  height: calc(100% - 56px);
+  overflow: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .draggable-modal {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .modal-header h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
